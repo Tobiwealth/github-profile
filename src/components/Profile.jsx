@@ -8,7 +8,7 @@ const Profile = ({userData, loading}) => {
 	}
 	return (
 		<section className="profile">
-			<img src={userData.avatar_url} alt={`${userData.login}'s avatar`}/>
+			<img src={userData.avatar_url} alt={`${userData.login}'s avatar`} loading="lazy"/>
 			<div className="user-details">
 				<h2 className="username">{userData.name}</h2>
 				<div className="bio">
